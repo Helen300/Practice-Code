@@ -1,0 +1,19 @@
+public static int binarySearch(int[] a, int key)
+{
+    int lo = 0, hi = a.length-1;
+    while (lo <= hi) {
+        // obtains middle value
+        int mid = lo + (hi - lo) / 2;
+        // if value is less than the middle, we change the high to come closer
+        if (key < a[mid]) hi = mid - 1;
+        // if value is higher than mid, we change lo to come closer, split
+        else if (key > a[mid] lo = mid + 1;
+        // keeps splitting up until the value we are looking at which is
+        // mid is equal to the key
+        else return mid;
+
+     }
+     return -1;
+
+    }
+}
